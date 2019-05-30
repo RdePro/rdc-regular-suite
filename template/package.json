@@ -16,6 +16,7 @@
         "prerelease": "npm login",
         "release": "npm run build && npm publish",
         "build": "webpack --config build/webpack.prod.conf.js",
+        "postbuild": "cp -R ./dist ../app/dist",
         "serve": "webpack-dev-server --config build/webpack.dev.conf.js",
         "lint": "eslint --fix -c ./.eslintrc.js --ext .js",
         "precommit": "lint-staged"
