@@ -9,6 +9,9 @@ module.exports = {
             '.js',
             '.json'
         ],
+        validate(dataView) {
+            return !!dataView.suiteName;
+        },
         mock: {
             suiteName: 'test-suite-name'
         }
@@ -18,5 +21,8 @@ module.exports = {
         ports: [
             '7000:7000'
         ]
+    },
+    lint: {
+        ext: ['.js']
     }
 };

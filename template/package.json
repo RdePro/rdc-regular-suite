@@ -13,11 +13,11 @@
         "ui"
     ],
     "scripts": {
+        "prerelease": "npm login",
         "release": "npm run build && npm publish",
         "build": "webpack --config build/webpack.prod.conf.js",
         "serve": "webpack-dev-server --config build/webpack.dev.conf.js",
-        "lint": "eslint -c ./.eslintrc.js ../",
-        "lint:fix": "eslint --fix -c ./.eslintrc.js ../",
+        "lint": "eslint --fix -c ./.eslintrc.js --ext .js",
         "precommit": "lint-staged"
     },
     "lint-staged": {
