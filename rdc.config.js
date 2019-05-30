@@ -10,7 +10,10 @@ module.exports = {
             '.json'
         ],
         validate(dataView) {
-            return !!dataView.suiteName;
+            if (!dataView.suiteName) {
+                return '请在rda.config.js中配置suiteName';
+            }
+            return true;
         },
         mock: {
             suiteName: 'test-suite-name'
