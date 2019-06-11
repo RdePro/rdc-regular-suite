@@ -2,10 +2,10 @@
     "name": "rdc-regular-suite",
     "description": "UI components based on RegularJS",
     "version": "0.6.2",
-    "main": "../app/dist/{{{suiteName}}}.js",
+    "main": "./dist/{{{suiteName}}}.js",
     "license": "MIT",
     "files": [
-        "../app/dist"
+        "dist"
     ],
     "keywords": [
         "regular",

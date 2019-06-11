@@ -5,7 +5,7 @@ const baseWebpackConfig = require('./webpack.conf');
 
 const {resolve} = path;
 const appPath = resolve(__dirname, '../../app');
-const OUTPUT_PATH = path.resolve('../', 'dist');
+const OUTPUT_PATH = path.resolve('./dist');
 
 module.exports = merge(baseWebpackConfig, {
     mode: 'production',

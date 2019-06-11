@@ -2,7 +2,8 @@ module.exports = {
     framework: 'vue',
     mode: 'origin',
     docs: {
-        url: 'https://rdepro.github.io/rdc-vue-starter/'
+        title: 'Regular Suite',
+        url: 'https://rdepro.github.io/rdc-regular-suite/'
     },
     render: {
         includes: [
