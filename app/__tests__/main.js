@@ -1,6 +1,7 @@
 import restate from 'regular-state';
 import BaseComponent from '@/base/BaseComponent';
-import { install } from '../index';
+// import { install } from '../index';
+import {install} from '../dist/test-suite-name';
 
 install(BaseComponent);
 
